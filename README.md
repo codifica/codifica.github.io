@@ -18,4 +18,4 @@
 ### This repo will eventually be the home of my professional portfolio from my Full Stack Web Development class, and beyond.
 ### 
 ## License information:
-### Please do not use any part of my code unless specific non-commercial permission is granted. Thank you. 
+### Please do not use any part of my code unless specific non-commercial permission is granted. Thank you. you!
