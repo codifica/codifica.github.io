@@ -1,0 +1,91 @@
+<html>
+<body>
+  <blocktext>
+Question 1: Have you performed QE lead role in your past QE experience; owned QE effort for testing an app or module or feature?<br />
+<br />
+At Hulu, I coordinated the testing for the launch of the HBO add-on across QA teams for multiple platform areas (web, mobile, and living room devices, as well as payments). I was also the QA point of contact for integration of our work with the work tested by multiple other larger QA teams at our client when I worked at Xevo.<br />
+<br />
+<br />
+Question 2: Have you created/designed Test Plan or Test Strategy detailing the test approach for the application that needs to be tested? What are the various areas you would cover as part of test plan / test strategy?<br />
+<br />
+I have created/designed test plans and test strategies, especially at Hulu and Xevo. The areas I focused myself on were:<br />
+- the UI itself (ensuring all element render the way they are expected to)<br />
+- functionality (do the app or website elements do what they are expected to)<br />
+- user experience (what's it like to use the app or website)<br />
+- longevity (can it run for a specified length of time and remain responsive and well-behaved)<br />
+- localization (does it transition as expected between regions and languages)<br />
+- accessibility (text to speech, speech to text, contrast, color-blind support.)<br />
+- A/B testing systems: testing to see if test treatments applied correctly only to the accounts intended.<br />
+- cross-platform/browser compatibility (testing to make sure the product functions as expected on all or a significant portion of the expected combinations of technology it should.)<br />
+- upgrade testing (checking user impact and system impact of releases of newer versions of code)<br />
+- metrics testing (checking various scenarios across things to make sure the app/site is sending the data it needs to send about user behavior within the app)<br />
+<br />
+Security is also an important area to consider, but the places I have worked tended to have separate process for that. Devs also ran their own unit tests and basic build verification automation, so those were also outside my purview. Content was also often QAed on its own by a different team, so beyond a basic verification, that was also outside my purview. I have also worked most on the front-end, so unless I was doing specific API verification, my work was focused on the front-end doing the correct things, up to and including spoofing responses that certain types of accounts should send when I did not have test accounts of those types available.<br />
+<br />
+Question 3: Have you developed test cases in your QE experience, can you tell the test cases that you would plan for login page?<br />
+Guidance: Covered minimum 5 sections with 1-3 scenarios for each<br />
+<br />
+I have developed and/or edited test cases at every job I've had in the 12 years I've been in the QA sector.<br />
+<br />
+I would check the UI render itself on the most common technology we expect it to be used on, testing things like:<br />
+- Does the login button render as expected?<br />
+- Does the username and/or email and/or profile selector render as expected?<br />
+- Is all of the text correctly readable on the UI elements?<br />
+<br />
+I would check the functionality of the features on the login make, testing things like:<br />
+- Do the email/username and password fields accept the correct input?<br />
+- Does clicking the login button with the right credentials allow the user to log in?<br />
+- Does clicking the login button with incorrect credentials correctly disallow the user from logging in and tell the user that their login has failed?<br />
+<br />
+I would check and make sure the login page behaves as expected on multiple platforms and browsers, testing things like:<br />
+- Can the user log in on older versions of the same browser?<br />
+- Is the user still logged in if the browser updates?<br />
+- Can the user log in on multiple different browsers/devices?<br />
+<br />
+I would check and make sure the login page works correctly after logging out, testing things like:<br />
+- Can the user log in again successfully?<br />
+- Does pressing back after logging out handle correctly by not signing the user back in without them having done so?<br />
+- Does refreshing the back after logging out leave the user in a logged out state as it should?<br />
+<br />
+I would check how navigable the login page is for text to speech users:<br />
+- Does it say the sections in a clear and concise manner?<br />
+- Can it be navigated as expected?<br />
+- Is it only saying what it is expected to say?<br />
+<br />
+I would check the calls being made:<br />
+- Is the password obfuscated?<br />
+- Are there any unnecessary calls being made?<br />
+- Are there any errors coming back?<br />
+<br />
+I would check how the page behaves when the user increases the font size in their browser for accessibility:<br />
+- Is all critical information still readable?<br />
+- Does anything get cut off?<br />
+- Does the UI get notably distorted?<br />
+<br />
+There are a lot more I could do, but that's a good sample size.<br />
+<br />
+<br />
+Question 4: Have you worked on web/mobile application testing in your QE experience and setup test environments or automation test environments or test labs?<br />
+<br />
+I have switched between environments and helped troubleshoot them, as well as documented the differences in test capabilities between them. I have also set up physical test labs for over 20 Roku models, half of which use IR remotes.<br />
+<br />
+<br />
+Question 5:<br />
+Part #1: Have you developed/designed/written automated tests using Selenium / Appium for web/mobile app?<br />
+<br />
+I have done a little bit of this when I worked at Xevo for pages for Toyota.<br />
+<br />
+<br />
+Part #2: How will you identify element locators on a web page/mobile app page?<br />
+<br />
+In an ideal world, the elements will have been named appropriately within the code to promote testability. I encountered some things we tested at Xevo that were very difficult to automate due to how they'd been named, and it made me think a lot about how to write more testable code.<br />
+<br />
+For web, I'd prefer to be able to identify elements by their CSS id and/or class name, depending on what I'm testing and how it needs to be tested. As for mobile apps, the strategies are somewhat different depending on whether the app being tested is on Android or iOS.<br />
+<br />
+<br />
+Part #3: What are the element locator strategies that you would use?
+I would make use of Appium Inspector's id locator and accessibility id locators in particular, targeting resource-id on Android and name on iOS. I could use class name, but it's not as sure a thing as the id and accessibility id properties. Xpath is not as robust a property to use because it's the slowest, and it's the easiest to accidentally break in future updates. There are further strategies to locate dynamic elements and elements by specific data, as well, each with their own quirks and uses.<br /><br />
+<a href = "index.html">Click here to go Home</a>
+</blocktext>
+</body>
+</html>
